@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+          .md{
+              height: 500px;
+              width: 500px;
+            
+              display: grid;
+              grid-template-areas:
+              "area1 area2 area3"
+              "area4 area2 area5"
+              "area6 area7 area8"
+              "area9 area7 area10";
+              padding: 30px;
+              gap: 10px;
+          }
+          .item1{
+              grid-area: area1;
+          }
+          .item2{
+              grid-area: area2;
+          }
+          .item3{
+              grid-area: area3;
+          }
+          .item4{
+              grid-area:area4 ;
+          }
+          .item5{
+              grid-area: area5;
+
+          }
+          .item6{
+              grid-area: area6;
+
+          }
+          .item7{
+              grid-area: area7;
+          }
+          .item8{
+              grid-area: area8;
+          }
+          .item9{
+           grid-area: area9;
+          }
+          .item10{
+              grid-area: area10;
+          }
+      img{
+              height: 90%;
+              width: 90%;
+          border: 2px solid black;
+      }
+         @media screen and (min-width:1px) and (max-width:376px){
+            .md{
+                width: 300px;
+                display: grid;
+                grid-template-areas: "area1"
+                "area2"
+                "area3"
+                "area4"
+                "area5"
+                "area6"
+                "area7"
+                "area8"
+                "area9"
+                "area10" ;
+                padding: 10px;
+                gap: 10px;
+            }
+         }
+         @media screen and (min-width:377px) and (max-width:468px){
+            .md{
+                width: 500px;
+                display: grid;
+                grid-template-areas: "area1 area2"
+                "area3 area4"
+                "area5 area6"
+                "area7 area8"
+                "area9 area10";
+                padding: 10px;
+                gap: 10px;
+            }
+         }
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div class="item1">
+        <img src="../assets/images/porsche.jpg" alt="item1" />
+      </div>
+      <div class="item2">
+        <img src="../assets/images/GT 650.jfif" alt="item2" />
+      </div>
+      <div class="item3">
+        <img src="../assets/images/hellcat.jfif" alt="item3" />
+      </div>
+      <div class="item4">
+        <img src="../assets/images/nissan-gtr.jpeg" alt="item4" />
+      </div>
+      <div class="item5">
+        <img src="../assets/images/harley davidson.jpg" alt="item5" />
+      </div>
+      <div class="item6">
+        <img src="../assets/images/hellcat.jfif" alt="item6" />
+      </div>
+      <div class="item7">
+        <img src="../assets/images/ducati1.jpg" alt="item7" />
+      </div>
+      <div class="item8">
+        <img src="../assets/images/mustang.jpg" alt="item8" />
+      </div>
+      <div class="item9">
+        <img src="../assets/images/gt650.jpg" alt="item9" />
+      </div>
+      <div class="item10">
+        <img src="../assets/images/ZX-10R.webp" alt="item10" />
+      </div>
+    </div>
+  </body>
+</html>
